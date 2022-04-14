@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .block {
+        border: 1px solid #000;
+        border-radius: 5px;
+        width: 100%;
+        height: 50vh;
+      }
+
+      .block-item {
+        position: relative;
+        width: 100%;
+        height: 100px;
+      }
+
+      .block-item:first-child {
+        background: rgb(192, 147, 147);
+      }
+
+      .block-item:nth-child(2) {
+        background: rgb(160, 235, 228);
+      }
+
+      .block-item:last-child {
+        background: rgb(170, 170, 170);
+      }
+
+      .block-item__content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+        width: 150px;
+        height: 40px;
+        background-color: aquamarine;
+        transition: transform 0.09s ease;
+        z-index: 10;
+      }
+
+      .block-info {
+        margin-top: 40px;
+        width: 40%;
+        height: 40vh;
+        border: 1px solid #000;
+        border-radius: 5px;
+        overflow: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="block">
+        <div class="block-item">
+          <div class="block-item__content"></div>
+        </div>
+        <div class="block-item">
+          <div class="block-item__content"></div>
+        </div>
+        <div class="block-item">
+          <div class="block-item__content"></div>
+        </div>
+      </div>
+
+      <div class="block-info">
+        <ul class="block-info-list">
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+
+</html>
